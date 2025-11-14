@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Multilingual Hello World</string>
+    <string name="topbar">Multilingual Hello World App</string>
+    <string name="hw">Hello World, Android!</string>
+</resources>

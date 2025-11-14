@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Multilingual Hello World</string>
+    <string name="topbar">Multilingual Hello World App</string>
+    <string name="hw">Hello World, Android!</string>
+</resources>

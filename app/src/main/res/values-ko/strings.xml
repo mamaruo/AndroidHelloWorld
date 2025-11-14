@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">다국어 헬로 월드</string>
+    <string name="topbar">다국어 헬로 월드 앱</string>
+    <string name="hw">헬로 월드, 안드로이드!</string>
+</resources>
