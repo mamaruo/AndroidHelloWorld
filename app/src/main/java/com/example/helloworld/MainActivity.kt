@@ -39,7 +39,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.helloworld.ui.theme.HelloWorldTheme
 import java.util.Locale
 
 class MainActivity : ComponentActivity() {
@@ -165,13 +164,21 @@ fun LanguageChangeButton(modifier: Modifier = Modifier) {
                             val configuration = act.resources.configuration
                             configuration.setLocale(locale)
                             @Suppress("DEPRECATION")
-                            act.resources.updateConfiguration(configuration, act.resources.displayMetrics)
+                            act.resources.updateConfiguration(
+                                configuration,
+                                act.resources.displayMetrics
+                            )
                             act.recreate()
                         }
                     }
                 },
                 selected = index == selectedIndex,
-                icon = { Flag(country = country, modifier = Modifier.size(SegmentedButtonDefaults.IconSize)) },
+                icon = {
+                    Flag(
+                        country = country,
+                        modifier = Modifier.size(SegmentedButtonDefaults.IconSize)
+                    )
+                },
                 label = { Text(text = label) }
             )
         }
